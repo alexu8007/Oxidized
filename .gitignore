@@ -12,5 +12,4 @@ Cargo.lock
 # Examples
 /examples/
 
-# Visualizations
-*.png
+./run-benchmarks.sh

@@ -18,22 +18,6 @@ Performance is a primary design goal of Oxidized. The framework is architected t
 
 The benchmark scenario consists of a simple endpoint, testing performance through one connection.
 
-### Requests Per Second (Throughput)
-
-This metric indicates the number of requests the server can handle per second. Higher is better.
-
-![Requests per Second](requests_per_second.png)
-
-### Average Latency
-
-This metric represents the average time taken to process a single request. Lower is better.
-
-![Average Latency](average_latency.png)
-
-### Analysis
-
-The empirical results demonstrate that `Oxidized` is highly competitive, exhibiting throughput and latency profiles on par with `Axum`, a framework renowned for its performance. The data suggests that `Oxidized`'s lightweight abstraction layer and efficient request lifecycle management contribute to its negligible overhead, positioning it as a premier choice for high-concurrency, low-latency applications.
-
 ## ✨ Features
 
 - **Asynchronous Core**: Built on `tokio` for non-blocking I/O and scalable concurrency.
@@ -72,3 +56,21 @@ async fn main() {
     Server::new(router, addr).run().await.unwrap();
 }
 ```
+
+Read Docs.md to get a better understanding
+
+### Requests Per Second (Throughput)
+
+This metric indicates the number of requests the server can handle per second. Higher is better.
+
+![Requests per Second](requests_per_second.png)
+
+### Average Latency
+
+This metric represents the average time taken to process a single request. Lower is better.
+
+![Average Latency](average_latency.png)
+
+### Analysis
+
+The empirical results demonstrate that `Oxidized` is highly competitive, exhibiting throughput and latency profiles on par with `Axum`, a framework renowned for its performance. The data suggests that `Oxidized`'s lightweight abstraction layer and efficient request lifecycle management contribute to its negligible overhead, positioning it as a premier choice for high-concurrency, low-latency applications.

@@ -1,0 +1,16 @@
+# Rust
+/target/
+Cargo.lock
+
+# Benchmarks
+/rust-web-benchmark/
+/oxidized-benchmark/
+/actix-benchmark/
+/axum-benchmark/
+/run-benchmarks.sh
+
+# Examples
+/examples/
+
+# Visualizations
+*.png

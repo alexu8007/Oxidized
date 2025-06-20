@@ -1,0 +1,54 @@
+[package]
+name = "oxidized"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <you@example.com>"]
+description = "A high-performance, enterprise-ready web framework for Rust."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/your-repo/oxidized"
+keywords = ["web", "framework", "async", "http", "performance"]
+categories = ["web-programming::web-servers"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+hyper = { version = "1", features = ["full"] }
+http = "1.0"
+http-body-util = "0.1.0"
+bytes = "1"
+thiserror = "1.0"
+httparse = "1.8"
+pin-project-lite = "0.2"
+hyper-util = { version = "0.1", features = ["full"] }
+tokio-tungstenite = "0.21"
+base64 = "0.21"
+sha1 = "0.10"
+futures-util = "0.3"
+tokio-rustls = "0.24"
+rustls-pemfile = "1.0"
+async-trait = "0.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[dev-dependencies]
+tokio-test = "0.4.3"
+anyhow = "1.0.81"
+tower = { version = "0.4", features = ["full"] }
+rcgen = "0.10"
+
+[[example]]
+name = "hello-world"
+path = "examples/hello-world.rs"
+
+[[example]]
+name = "websocket"
+path = "examples/websocket.rs"
+
+[workspace]
+members = [
+    "oxidized-benchmark",
+    "actix-benchmark",
+    "axum-benchmark",
+]
+resolver = "2" 

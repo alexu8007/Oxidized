@@ -10,7 +10,6 @@ homepage = "https://github.com/alexu8007/Oxidized"
 documentation = "https://docs.rs/oxidized"
 readme = "README.md"
 keywords = ["web", "framework", "async", "http", "performance"]
-categories = [""]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

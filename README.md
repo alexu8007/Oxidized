@@ -31,6 +31,12 @@ The benchmark scenario consists of a simple endpoint, testing performance throug
 
 ## ⚙️ Getting Started
 
+Install via,
+
+```bash
+cargo add oxidized
+```
+
 Below is a canonical "Hello, World!" application demonstrating the fundamental components of Oxidized.
 
 ```rust

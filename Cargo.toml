@@ -2,10 +2,13 @@
 name = "oxidized"
 version = "0.1.0"
 edition = "2021"
-authors = ["Your Name <you@example.com>"]
-description = "A high-performance, enterprise-ready web framework for Rust."
-license = "MIT OR Apache-2.0"
-repository = "https://github.com/your-repo/oxidized"
+authors = ["alexu8007"]
+description = "A hyper-performant, modular, and asynchronous web framework for Rust, built on hyper and tokio. Featuring a Tower-inspired, Service-based architecture for maximum performance and composability."
+license = "MIT"
+repository = "https://github.com/alexu8007/Oxidized"
+homepage = "https://github.com/alexu8007/Oxidized"
+documentation = "https://docs.rs/oxidized"
+readme = "README.md"
 keywords = ["web", "framework", "async", "http", "performance"]
 categories = ["web-programming::web-servers"]
 
